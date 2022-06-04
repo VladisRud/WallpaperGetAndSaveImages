@@ -1,0 +1,4 @@
+Target dependency graph (2 targets)
+UnsplashPhotoPicker in Pods, no dependencies
+Pods-ImageGetAndSaveVladisRud in Pods, depends on:
+UnsplashPhotoPicker in Pods (explicit)

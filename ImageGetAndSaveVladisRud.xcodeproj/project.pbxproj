@@ -13,6 +13,8 @@
 		5876513A2822E59200EA1779 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 587651382822E59200EA1779 /* Main.storyboard */; };
 		5876513C2822E59300EA1779 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5876513B2822E59300EA1779 /* Assets.xcassets */; };
 		5876513F2822E59300EA1779 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5876513D2822E59300EA1779 /* LaunchScreen.storyboard */; };
+		588016FB2826BEA40037C37B /* UnplashPhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588016FA2826BEA40037C37B /* UnplashPhotoPicker.swift */; };
+		B83E11B426676DC514EB5A22 /* Pods_ImageGetAndSaveVladisRud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6258A76E1606839CF8C277F7 /* Pods_ImageGetAndSaveVladisRud.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		5876513B2822E59300EA1779 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5876513E2822E59300EA1779 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		587651402822E59300EA1779 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		588016FA2826BEA40037C37B /* UnplashPhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnplashPhotoPicker.swift; sourceTree = "<group>"; };
+		6258A76E1606839CF8C277F7 /* Pods_ImageGetAndSaveVladisRud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageGetAndSaveVladisRud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93D3A5CBA53C5FFC516D0C50 /* Pods-ImageGetAndSaveVladisRud.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageGetAndSaveVladisRud.debug.xcconfig"; path = "Target Support Files/Pods-ImageGetAndSaveVladisRud/Pods-ImageGetAndSaveVladisRud.debug.xcconfig"; sourceTree = "<group>"; };
+		C99EA4A0FC7785FB666EC446 /* Pods-ImageGetAndSaveVladisRud.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageGetAndSaveVladisRud.release.xcconfig"; path = "Target Support Files/Pods-ImageGetAndSaveVladisRud/Pods-ImageGetAndSaveVladisRud.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B83E11B426676DC514EB5A22 /* Pods_ImageGetAndSaveVladisRud.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +49,8 @@
 			children = (
 				587651312822E59200EA1779 /* ImageGetAndSaveVladisRud */,
 				587651302822E59200EA1779 /* Products */,
+				A05050F185E083F706BA16B3 /* Frameworks */,
+				A851F4605A71F22BDD9E7F7B /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +65,57 @@
 		587651312822E59200EA1779 /* ImageGetAndSaveVladisRud */ = {
 			isa = PBXGroup;
 			children = (
+				587651482822F2E100EA1779 /* Model */,
+				587651492822F2EC00EA1779 /* View */,
+				5876514A2822F2FC00EA1779 /* Controller */,
 				587651322822E59200EA1779 /* AppDelegate.swift */,
 				587651342822E59200EA1779 /* SceneDelegate.swift */,
-				587651362822E59200EA1779 /* ViewController.swift */,
-				587651382822E59200EA1779 /* Main.storyboard */,
 				5876513B2822E59300EA1779 /* Assets.xcassets */,
-				5876513D2822E59300EA1779 /* LaunchScreen.storyboard */,
 				587651402822E59300EA1779 /* Info.plist */,
 			);
 			path = ImageGetAndSaveVladisRud;
+			sourceTree = "<group>";
+		};
+		587651482822F2E100EA1779 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				588016FA2826BEA40037C37B /* UnplashPhotoPicker.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		587651492822F2EC00EA1779 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				587651382822E59200EA1779 /* Main.storyboard */,
+				5876513D2822E59300EA1779 /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5876514A2822F2FC00EA1779 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				587651362822E59200EA1779 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A05050F185E083F706BA16B3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6258A76E1606839CF8C277F7 /* Pods_ImageGetAndSaveVladisRud.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A851F4605A71F22BDD9E7F7B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				93D3A5CBA53C5FFC516D0C50 /* Pods-ImageGetAndSaveVladisRud.debug.xcconfig */,
+				C99EA4A0FC7785FB666EC446 /* Pods-ImageGetAndSaveVladisRud.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +125,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 587651432822E59300EA1779 /* Build configuration list for PBXNativeTarget "ImageGetAndSaveVladisRud" */;
 			buildPhases = (
+				C5EA697667DC9904AC07BED4 /* [CP] Check Pods Manifest.lock */,
 				5876512B2822E59200EA1779 /* Sources */,
 				5876512C2822E59200EA1779 /* Frameworks */,
 				5876512D2822E59200EA1779 /* Resources */,
@@ -133,6 +185,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		C5EA697667DC9904AC07BED4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ImageGetAndSaveVladisRud-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5876512B2822E59200EA1779 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +217,7 @@
 			files = (
 				587651372822E59200EA1779 /* ViewController.swift in Sources */,
 				587651332822E59200EA1779 /* AppDelegate.swift in Sources */,
+				588016FB2826BEA40037C37B /* UnplashPhotoPicker.swift in Sources */,
 				587651352822E59200EA1779 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +360,7 @@
 		};
 		587651442822E59300EA1779 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93D3A5CBA53C5FFC516D0C50 /* Pods-ImageGetAndSaveVladisRud.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +389,7 @@
 		};
 		587651452822E59300EA1779 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C99EA4A0FC7785FB666EC446 /* Pods-ImageGetAndSaveVladisRud.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
