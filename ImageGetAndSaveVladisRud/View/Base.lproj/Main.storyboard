@@ -44,6 +44,9 @@
                                         <buttonConfiguration key="configuration" style="filled" title="Save">
                                             <fontDescription key="titleFontDescription" type="system" pointSize="30"/>
                                         </buttonConfiguration>
+                                        <connections>
+                                            <action selector="SaveImage:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xM7-cc-WHc"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>

@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UIImagePickerControllerDelegate {
     
     @IBOutlet weak var userImage: UIImageView!
     
@@ -45,13 +45,43 @@ class ViewController: UIViewController {
         task.resume()
     }
     
+    @IBAction func SaveImage(_ sender: UIButton) {
+
+        //MARK: - Сохранение фотографии в галерею пользователя
+
+            guard let selectedImage = userImage.image else {
+                return
+            }
+
+            UIImageWriteToSavedPhotosAlbum(selectedImage, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
+
+        
+
+        
+        
+        
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
     
-
     
+    //MARK: - Save Image callback
+    @objc func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
+
+        if let error = error {
+
+            print(error.localizedDescription)
+
+        } else {
+
+            print("Success")
+        }
+    }
+
 
 }
 
