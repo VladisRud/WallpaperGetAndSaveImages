@@ -15,12 +15,12 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate {
         
         //MARK: - Получение фотографии по ссылке
         
-        let userImageHeigth = Int(userImage.frame.height)
+        let userPhoneDispaySizeHeight = Int(UIScreen.main.bounds.height)
         
-        let userImageWidth = Int(userImage.frame.width)
+        let userPhoneDispaySizeWidth = Int(UIScreen.main.bounds.width)
         
         // 1 - Получаем API
-        let API = "https://picsum.photos/\(userImageWidth)/\(userImageHeigth)"
+        let API = "https://picsum.photos/\(userPhoneDispaySizeWidth)/\(userPhoneDispaySizeHeight)"
         
         // 2 - Создание URL
         guard let apiURL = URL(string: API) else {
@@ -43,29 +43,25 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate {
         
         // 6 - Запустить запрос
         task.resume()
+        
     }
     
     @IBAction func SaveImage(_ sender: UIButton) {
 
         //MARK: - Сохранение фотографии в галерею пользователя
-
-            guard let selectedImage = userImage.image else {
-                return
-            }
-
-            UIImageWriteToSavedPhotosAlbum(selectedImage, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
-
+        guard let selectedImage = userImage.image else {
+            return
+            
+        }
         
-
-        
-        
-        
+        UIImageWriteToSavedPhotosAlbum(selectedImage, self, #selector(image(_:didFinishSavingWithError:contextInfo:)), nil)
         
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
     }
     
     
@@ -73,13 +69,11 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate {
     @objc func image(_ image: UIImage, didFinishSavingWithError error: Error?, contextInfo: UnsafeRawPointer) {
 
         if let error = error {
-
             print(error.localizedDescription)
-
         } else {
-
             print("Success")
         }
+        
     }
 
 
