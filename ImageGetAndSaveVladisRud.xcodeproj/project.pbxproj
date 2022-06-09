@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		584C5F6228511CF700295867 /* TestSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 584C5F6128511CF700295867 /* TestSecondViewController.swift */; };
+		580F4C6428527B62009BDC87 /* TestSecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 580F4C6328527B62009BDC87 /* TestSecondViewController.swift */; };
 		587651332822E59200EA1779 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587651322822E59200EA1779 /* AppDelegate.swift */; };
 		587651352822E59200EA1779 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587651342822E59200EA1779 /* SceneDelegate.swift */; };
 		587651372822E59200EA1779 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587651362822E59200EA1779 /* ViewController.swift */; };
@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		584C5F6128511CF700295867 /* TestSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSecondViewController.swift; sourceTree = "<group>"; };
+		580F4C6328527B62009BDC87 /* TestSecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestSecondViewController.swift; sourceTree = "<group>"; };
 		5876512F2822E59200EA1779 /* ImageGetAndSaveVladisRud.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageGetAndSaveVladisRud.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		587651322822E59200EA1779 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		587651342822E59200EA1779 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,7 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				587651362822E59200EA1779 /* ViewController.swift */,
-				584C5F6128511CF700295867 /* TestSecondViewController.swift */,
+				580F4C6328527B62009BDC87 /* TestSecondViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -219,10 +219,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				587651372822E59200EA1779 /* ViewController.swift in Sources */,
-				584C5F6228511CF700295867 /* TestSecondViewController.swift in Sources */,
 				587651332822E59200EA1779 /* AppDelegate.swift in Sources */,
 				588016FB2826BEA40037C37B /* UnplashPhotoPicker.swift in Sources */,
 				587651352822E59200EA1779 /* SceneDelegate.swift in Sources */,
+				580F4C6428527B62009BDC87 /* TestSecondViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
