@@ -132,6 +132,7 @@
 				5876512B2822E59200EA1779 /* Sources */,
 				5876512C2822E59200EA1779 /* Frameworks */,
 				5876512D2822E59200EA1779 /* Resources */,
+				42EBA0D8510D1A4D54CC6072 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -189,6 +190,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		42EBA0D8510D1A4D54CC6072 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImageGetAndSaveVladisRud/Pods-ImageGetAndSaveVladisRud-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImageGetAndSaveVladisRud/Pods-ImageGetAndSaveVladisRud-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ImageGetAndSaveVladisRud/Pods-ImageGetAndSaveVladisRud-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C5EA697667DC9904AC07BED4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;

@@ -6,30 +6,35 @@
 //
 
 import UIKit
+import UnsplashPhotoPicker
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate {
+    
+    var randomImage = UserImage()
     
     @IBOutlet weak var userImage: UIImageView!
     
     @IBAction func GetPhoto(_ sender: UIButton) {
         
+        randomImage.loadImage()
+        
         //MARK: - Получение фотографии по ссылке
-        
-        let userPhoneDispaySizeHeight = Int(UIScreen.main.bounds.height)
-        
-        let userPhoneDispaySizeWidth = Int(UIScreen.main.bounds.width)
-        
+
+//        let userPhoneDispaySizeHeight = Int(UIScreen.main.bounds.height)
+//
+//        let userPhoneDispaySizeWidth = Int(UIScreen.main.bounds.width)
+
         // 1 - Получаем API
-        let API = "https://picsum.photos/\(userPhoneDispaySizeWidth)/\(userPhoneDispaySizeHeight)"
-        
+        let API = "\(randomImage.urlPhoto)"
+
         // 2 - Создание URL
         guard let apiURL = URL(string: API) else {
             fatalError("WTFWTFWTFWTFWTFWTF")
         }
-        
+
         // 3 - Инициализать сессию
         let session = URLSession(configuration: .default)
-        
+
         // 4 - Создать запрос dataTask
         let task = session.dataTask(with: apiURL) { data, response, error in
             // 5 - Обработать полученные данные
@@ -40,7 +45,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate {
                 self.userImage.image = UIImage(data: data)
             }
         }
-        
+
         // 6 - Запустить запрос
         task.resume()
         
