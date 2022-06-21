@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D57C4FF44427D7E27174DF8BB68883E"
-               BuildableName = "libPods-ImageGetAndSaveVladisRud.a"
+               BuildableName = "Pods_ImageGetAndSaveVladisRud.framework"
                BlueprintName = "Pods-ImageGetAndSaveVladisRud"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

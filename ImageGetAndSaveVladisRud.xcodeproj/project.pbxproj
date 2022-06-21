@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5436CD2CAC8196E719C9EDE5 /* libPods-ImageGetAndSaveVladisRud.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 99E869D7C624561731FDFCF8 /* libPods-ImageGetAndSaveVladisRud.a */; };
 		587651332822E59200EA1779 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587651322822E59200EA1779 /* AppDelegate.swift */; };
 		587651352822E59200EA1779 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587651342822E59200EA1779 /* SceneDelegate.swift */; };
 		587651372822E59200EA1779 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 587651362822E59200EA1779 /* ViewController.swift */; };
@@ -16,6 +15,7 @@
 		5876513F2822E59300EA1779 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5876513D2822E59300EA1779 /* LaunchScreen.storyboard */; };
 		588016FB2826BEA40037C37B /* UnplashPhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588016FA2826BEA40037C37B /* UnplashPhotoPicker.swift */; };
 		58DE9B45285E20D700D894BD /* CategoryImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DE9B44285E20D700D894BD /* CategoryImagesViewController.swift */; };
+		78A7FB9101137DA3744B3734 /* Pods_ImageGetAndSaveVladisRud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E68313F18D2514E7974983 /* Pods_ImageGetAndSaveVladisRud.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +30,7 @@
 		588016FA2826BEA40037C37B /* UnplashPhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnplashPhotoPicker.swift; sourceTree = "<group>"; };
 		58DE9B44285E20D700D894BD /* CategoryImagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryImagesViewController.swift; sourceTree = "<group>"; };
 		93D3A5CBA53C5FFC516D0C50 /* Pods-ImageGetAndSaveVladisRud.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageGetAndSaveVladisRud.debug.xcconfig"; path = "Target Support Files/Pods-ImageGetAndSaveVladisRud/Pods-ImageGetAndSaveVladisRud.debug.xcconfig"; sourceTree = "<group>"; };
-		99E869D7C624561731FDFCF8 /* libPods-ImageGetAndSaveVladisRud.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ImageGetAndSaveVladisRud.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2E68313F18D2514E7974983 /* Pods_ImageGetAndSaveVladisRud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageGetAndSaveVladisRud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C99EA4A0FC7785FB666EC446 /* Pods-ImageGetAndSaveVladisRud.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageGetAndSaveVladisRud.release.xcconfig"; path = "Target Support Files/Pods-ImageGetAndSaveVladisRud/Pods-ImageGetAndSaveVladisRud.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -39,7 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5436CD2CAC8196E719C9EDE5 /* libPods-ImageGetAndSaveVladisRud.a in Frameworks */,
+				78A7FB9101137DA3744B3734 /* Pods_ImageGetAndSaveVladisRud.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,7 +107,7 @@
 		A05050F185E083F706BA16B3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				99E869D7C624561731FDFCF8 /* libPods-ImageGetAndSaveVladisRud.a */,
+				A2E68313F18D2514E7974983 /* Pods_ImageGetAndSaveVladisRud.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -132,6 +132,7 @@
 				5876512B2822E59200EA1779 /* Sources */,
 				5876512C2822E59200EA1779 /* Frameworks */,
 				5876512D2822E59200EA1779 /* Resources */,
+				A300D73CE7839A1DD6287754 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -189,6 +190,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		A300D73CE7839A1DD6287754 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImageGetAndSaveVladisRud/Pods-ImageGetAndSaveVladisRud-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ImageGetAndSaveVladisRud/Pods-ImageGetAndSaveVladisRud-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ImageGetAndSaveVladisRud/Pods-ImageGetAndSaveVladisRud-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		C5EA697667DC9904AC07BED4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
