@@ -10,13 +10,15 @@ import UnsplashPhotoPicker
 
 class ViewController: UIViewController, UIImagePickerControllerDelegate {
     
+    var categoryImage: String = ""
+    
     var randomImage = UserImage()
     
     @IBOutlet weak var userImage: UIImageView!
     
     @IBAction func GetPhoto(_ sender: UIButton) {
         
-        randomImage.loadImage()
+        randomImage.loadImage(category: categoryImage)
         
         //MARK: - Получение фотографии по ссылке
 
@@ -26,7 +28,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate {
 
         // 1 - Получаем API
         let API = "\(randomImage.urlPhoto)"
-
+        
         // 2 - Создание URL
         guard let apiURL = URL(string: API) else {
             fatalError("WTFWTFWTFWTFWTFWTF")
@@ -66,7 +68,7 @@ class ViewController: UIViewController, UIImagePickerControllerDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
+        randomImage.loadImage(category: categoryImage)
     }
     
     

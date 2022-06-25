@@ -14,16 +14,23 @@ struct Photo: Codable {
 
 class UserImage: ObservableObject {
     
+    let dictOfCategories = ["Space": 1111575,
+                            "Animals": 332024,
+                            "Plant": 1521781,
+                            "Yellow Thinking": 1717137,
+                            "Home Decor and Design": 494266
+    ]
+    
     var urlPhoto: String = ""
     
     init () {
-        loadImage()
+        
     }
     
-    func loadImage() {
+    func loadImage(category: String) {
         
         let unplashKey = "xwjMhFNd-hpPJV3wbCWOENLblnH0lm18Kpdwqyw6H4Q"
-        let url = "https://api.unsplash.com/photos/random/?count=1&topics=people&client_id=\(unplashKey)"
+        let url = "https://api.unsplash.com/photos/random/?count=1&collections=\(dictOfCategories[category]!)&topics=people&client_id=\(unplashKey)"
         
         guard let unplashURL = URL(string: url) else {
             fatalError("WTFWTFWTFWTFWTFWTFWTFWTFWTF")

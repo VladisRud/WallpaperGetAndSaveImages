@@ -9,7 +9,9 @@ import UIKit
 
 class CategoryImagesViewController: UIViewController {
     
-    var categoriesOfImage = ["Nature", "Cat", "Dog", "Car", "Space"]
+    var categoriesInDict = UserImage()
+    
+    var categoriesOfImage = ["Space", "Animals", "Plant", "Yellow Thinking", "Home Decor and Design"]
     
     @IBOutlet weak var tableView: UITableView!
     
@@ -51,6 +53,15 @@ extension CategoryImagesViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "GoToImage", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let destinationVC = segue.destination as! ViewController
+        
+        if let indexPath = tableView.indexPathForSelectedRow {
+            destinationVC.categoryImage = categoriesOfImage[indexPath.row]
+            
+        }
     }
     
 
