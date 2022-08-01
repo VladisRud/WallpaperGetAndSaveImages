@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="O6a-d2-W1d" customClass="CategoriesCell" customModule="ImageGetAndSaveVladisRud" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="370" height="100"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="O6a-d2-W1d" id="old-d3-GaS" customClass="CategoriesCell" customModule="ImageGetAndSaveVladisRud" customModuleProvider="target">
+                <rect key="frame" x="0.0" y="0.0" width="370" height="100"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" fixedFrame="YES" text="Space" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Iu-YG-S1r">
+                        <rect key="frame" x="7" y="5" width="298" height="90"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <fontDescription key="fontDescription" name="Thonburi-Light" family="Thonburi" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="🌌" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rOt-Uf-msT">
+                        <rect key="frame" x="290" y="9" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="UQl-zF-BAQ"/>
+                            <constraint firstAttribute="width" constant="80" id="y8v-Ip-lqh"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.054901960780000002" green="0.66274509800000003" blue="0.87058823529999996" alpha="0.29790976819999998" colorSpace="custom" customColorSpace="sRGB"/>
+                <color key="tintColor" red="0.054901960780000002" green="0.66274509800000003" blue="0.87058823529999996" alpha="0.29790976821192056" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="rOt-Uf-msT" secondAttribute="trailing" id="NK0-wT-CCa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="categoriesIcon" destination="rOt-Uf-msT" id="Fqr-HS-H9h"/>
+                <outlet property="categoriesName" destination="1Iu-YG-S1r" id="GSG-xF-iAx"/>
+            </connections>
+            <point key="canvasLocation" x="-223.18840579710147" y="81.696428571428569"/>
+        </tableViewCell>
+    </objects>
+</document>

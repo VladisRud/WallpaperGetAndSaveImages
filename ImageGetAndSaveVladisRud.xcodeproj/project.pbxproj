@@ -14,6 +14,8 @@
 		5876513C2822E59300EA1779 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5876513B2822E59300EA1779 /* Assets.xcassets */; };
 		5876513F2822E59300EA1779 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5876513D2822E59300EA1779 /* LaunchScreen.storyboard */; };
 		588016FB2826BEA40037C37B /* UnplashPhotoPicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 588016FA2826BEA40037C37B /* UnplashPhotoPicker.swift */; };
+		58C1279328670EEE009994B8 /* CategoriesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58C1279228670EEE009994B8 /* CategoriesCell.xib */; };
+		58C1279528670F67009994B8 /* CategoriesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58C1279428670F67009994B8 /* CategoriesCell.swift */; };
 		58DE9B45285E20D700D894BD /* CategoryImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58DE9B44285E20D700D894BD /* CategoryImagesViewController.swift */; };
 		78A7FB9101137DA3744B3734 /* Pods_ImageGetAndSaveVladisRud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2E68313F18D2514E7974983 /* Pods_ImageGetAndSaveVladisRud.framework */; };
 /* End PBXBuildFile section */
@@ -28,6 +30,8 @@
 		5876513E2822E59300EA1779 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		587651402822E59300EA1779 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		588016FA2826BEA40037C37B /* UnplashPhotoPicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnplashPhotoPicker.swift; sourceTree = "<group>"; };
+		58C1279228670EEE009994B8 /* CategoriesCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoriesCell.xib; sourceTree = "<group>"; };
+		58C1279428670F67009994B8 /* CategoriesCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesCell.swift; sourceTree = "<group>"; };
 		58DE9B44285E20D700D894BD /* CategoryImagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryImagesViewController.swift; sourceTree = "<group>"; };
 		93D3A5CBA53C5FFC516D0C50 /* Pods-ImageGetAndSaveVladisRud.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ImageGetAndSaveVladisRud.debug.xcconfig"; path = "Target Support Files/Pods-ImageGetAndSaveVladisRud/Pods-ImageGetAndSaveVladisRud.debug.xcconfig"; sourceTree = "<group>"; };
 		A2E68313F18D2514E7974983 /* Pods_ImageGetAndSaveVladisRud.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ImageGetAndSaveVladisRud.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -91,6 +95,8 @@
 			children = (
 				587651382822E59200EA1779 /* Main.storyboard */,
 				5876513D2822E59300EA1779 /* LaunchScreen.storyboard */,
+				58C1279228670EEE009994B8 /* CategoriesCell.xib */,
+				58C1279428670F67009994B8 /* CategoriesCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -182,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5876513F2822E59300EA1779 /* LaunchScreen.storyboard in Resources */,
+				58C1279328670EEE009994B8 /* CategoriesCell.xib in Resources */,
 				5876513C2822E59300EA1779 /* Assets.xcassets in Resources */,
 				5876513A2822E59200EA1779 /* Main.storyboard in Resources */,
 			);
@@ -237,6 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				587651372822E59200EA1779 /* ViewController.swift in Sources */,
+				58C1279528670F67009994B8 /* CategoriesCell.swift in Sources */,
 				58DE9B45285E20D700D894BD /* CategoryImagesViewController.swift in Sources */,
 				587651332822E59200EA1779 /* AppDelegate.swift in Sources */,
 				588016FB2826BEA40037C37B /* UnplashPhotoPicker.swift in Sources */,

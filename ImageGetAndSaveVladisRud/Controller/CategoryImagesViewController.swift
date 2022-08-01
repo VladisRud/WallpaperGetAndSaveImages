@@ -11,19 +11,23 @@ class CategoryImagesViewController: UIViewController {
     
     var categoriesInDict = UserImage()
     
-    var categoriesOfImage = ["Space", "Animals", "Plant", "Yellow Thinking", "Home Decor and Design"]
+    let categoriesOfImage = ["Space", "Animals", "Plant", "Yellow Thinking", "Home Decor and Design"]
+    let iconOfImage = ["🌌", "🦫", "🪷", "💛", "🏠"]
     
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         
+        super.viewDidLoad()
+        
         tableView.dataSource = self
         
         tableView.delegate = self
         
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        tableView.register(UINib(nibName: "CategoriesCell", bundle: nil), forCellReuseIdentifier: "CategoryCell")
+        
+        tableView.separatorStyle = .none
+        
     }
     
     
@@ -36,10 +40,14 @@ extension CategoryImagesViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell = tableView.dequeueReusableCell(withIdentifier: "CategoryCell", for: indexPath)
-        cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "CategoryCell")
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CategoryCell", for: indexPath) as! CategoriesCell
+//        cell = UITableViewCell(style: UITableViewCell.CellStyle.default, reuseIdentifier: "CategoryCell") as! CategoriesCell
         
-        cell.textLabel?.text = categoriesOfImage[indexPath.row]
+//        cell.textLabel?.text = categoriesOfImage[indexPath.row]
+        
+        
+        cell.categoriesName.text = categoriesOfImage[indexPath.row]
+        cell.categoriesIcon.text = iconOfImage[indexPath.row]
         
         return cell
     }
@@ -50,6 +58,12 @@ extension CategoryImagesViewController: UITableViewDataSource {
 }
 
 extension CategoryImagesViewController: UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 100
+    }
+    
+    
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         performSegue(withIdentifier: "GoToImage", sender: self)
