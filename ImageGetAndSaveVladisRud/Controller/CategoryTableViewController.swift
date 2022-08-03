@@ -32,7 +32,7 @@ class CategoryTableViewController: UIViewController {
     let tableView: UITableView = {
         let table = UITableView()
         table.translatesAutoresizingMaskIntoConstraints = false
-        table.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        table.register(UITableViewCell.self, forCellReuseIdentifier: String.cell)
 //        table.register(CategoryTableViewCell.self, forCellReuseIdentifier: "cell")
         return table
     }()
@@ -58,12 +58,12 @@ extension CategoryTableViewController: UITableViewDelegate, UITableViewDataSourc
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
 //        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        let cell2 = UITableViewCell(style: .value1, reuseIdentifier: "cell")
+        let cell = UITableViewCell(style: .value1, reuseIdentifier: String.cell)
 
-        cell2.textLabel?.text = categoriesOfImage[indexPath.row]
-        cell2.detailTextLabel?.text = iconOfImage[indexPath.row]
+        cell.textLabel?.text = categoriesOfImage[indexPath.row]
+        cell.detailTextLabel?.text = iconOfImage[indexPath.row]
 
-        return cell2
+        return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -79,4 +79,10 @@ extension CategoryTableViewController: UITableViewDelegate, UITableViewDataSourc
     
 
 
+}
+
+
+//MARK: - Constant
+extension String {
+    static let cell = "cell"
 }
