@@ -57,12 +57,19 @@ extension CategoryTableViewController: UITableViewDelegate, UITableViewDataSourc
 
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+
+        //MARK: - for default cell
         let cell = UITableViewCell(style: .value1, reuseIdentifier: String.cell)
 
         cell.textLabel?.text = categoriesOfImage[indexPath.row]
         cell.detailTextLabel?.text = iconOfImage[indexPath.row]
 
+//        //MARK: - for custom cell CategoryTableViewCell
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CategoryTableViewCell
+//
+//        cell.leftLabel.text = categoriesOfImage[indexPath.row]
+//        cell.rightLabel.text = iconOfImage[indexPath.row]
+        
         return cell
     }
     

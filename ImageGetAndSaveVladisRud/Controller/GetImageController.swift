@@ -17,7 +17,6 @@ class GetImageController: UIViewController {
     override func viewDidLoad() {
         randomImage.loadImage(category: categoryImage)
         
-        
         view.backgroundColor = .white
         view.addSubview(labelView)
 //        labelView.addSubview(nameLable)
